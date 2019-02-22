@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tiffany Rudd Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ruthie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cousine|Ruthie" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        // Wrap every letter in a span
+        $('.ml9 .letters').each(function () {
+            $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+        });
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml9 .letter',
+                scale: [0, 1],
+                duration: 1500,
+                elasticity: 600,
+                delay: function (el, i) {
+                    return 45 * (i + 1)
+                }
+            }).add({
+                targets: '.ml9',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- 
+    <h1 class="ml9">
+        <span class="text-wrapper">
+            <span class="letters">Coffee mornings</span>
+        </span>
+    </h1> -->
+
+    <div class="row one">
+        <div class="col">
+            <img class="me circular" src="images/Tiffany Cartoon.png" style="width:100px; height:100px;">
+            <span class="Hi">Hi There!</span>
+        </div>
+    </div>
+
+    <div class="row two">
+        <div class="col">
+            <img src="images/clouds.png" class="cloud" style="width:100px; height:90px;">
+        </div>
+    </div>
+
+    <div class="row three">
+        <div class="col">
+            <p class="name">I'm Tiffany.<span> </span></p>
+        </div>
+    </div>
+
+    <!-- <div class="row four m19 col">
+        <div class="col">
+            <span class="text-wrapper">
+                <span class="letters letter title">a software engineer</span>
+            </span>
+        </div>
+    </div> -->
+
+    <div class="row four m19 col">
+        <div class="col">
+            <span class="text-wrapper">
+                <span class="letters letter title">a software engineer</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="row five">
+        <div class="col">
+            <img src="images/clouds.png" class="cloud-two" style="width:100px; height:90px;">
+        </div>
+    </div>
+
+    <div class="row six">
+        <div class="col">
+            <img src="images/beach.png" class="beach center" style="width:550px; height:350px;">
+        </div>
+    </div>
+
+    <div id="skills" style>
+        <!-- <p class="myskills">Skills</p> -->
+
+        <div class="row-one">
+            <div class="column">
+                <li class="skill-type">
+                    <i class="devicon-javascript-plain"></i>
+                    JavaScript
+                </li>
+            </div>
+            <div class="column">
+                <li class="skill-type">
+                    <i class="devicon-react-original"></i>
+                    React
+                </li>
+            </div>
+            <div class="column">
+                <li class="skill-type">
+                    <i class="devicon-nodejs-plain"></i>
+                    Nodejs
+                </li>
+            </div>
+            <div class="column">
+                <li class="skill-type">
+                    <i class="devicon-express-original"></i>
+                    Express
+                </li>
+            </div>
+        </div>
+        <div class="row-two">
+
+            <div class="column">
+                <li class="skill-type">
+                    <i class="devicon-mysql-plain"></i>
+                    MySQL
+                </li>
+            </div>
+
+            <div class="column">
+                <li class="skill-type">
+                    <i class="devicon-mongodb-plain"></i>
+                    MongoDB
+                </li>
+            </div>
+
+            <div class="column">
+                <li class="skill-type">
+                    <i class="devicon-html5-plain"></i>
+                    HTML
+                </li>
+            </div>
+
+            <div class="column">
+                <li class="skill-type">
+                    <i class="devicon-css3-plain"></i>
+                    CSS
+                </li>
+            </div>
+        </div>
+        <div class="row-three">
+
+            <div class="column">
+                <li class="skill-type">
+                    <i class="devicon-wordpress-plain"></i>
+                    WordPress
+                </li>
+            </div>
+
+            <div class="column">
+                <li class="skill-type">
+                    <i class="devicon-bootstrap-plain"></i>
+                    Bootstrap
+                </li>
+            </div>
+
+            <div class="column">
+                <li class="skill-type">
+                    <i class="devicon-jquery-plain"></i>
+                    jQuery
+                </li>
+            </div>
+
+            <div class="column">
+                <li class="skill-type">
+                    <i class="devicon-photoshop-plain"></i>
+                    Photoshop
+                </li>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</body>
+</html>

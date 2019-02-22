@@ -1,0 +1,194 @@
+body {
+    background-color: #defcfc; 
+    background-color: purple; 
+    background-color: white;
+    /* background-color:limegreen;  */
+    /* max-width: 800px;  */
+}
+
+img {
+    height: 400px; 
+    width: 400px; 
+}
+
+.one {
+    /* background-color: pink;  */
+    /* text-align: center;  */
+    position: relative;
+    top: 70px; 
+    left: 100px; 
+}
+
+.two {
+    /* background-color: yellow;   */
+    position: relative;
+    top: -25px; 
+    left: 900px; 
+}
+
+
+.three {
+    /* background-color: brown;  */
+    text-align: center; 
+    position: relative;  
+}
+
+.four {
+    /* background-color:blue;  */
+    text-align: center;  
+    position: relative;
+    top: -75px; 
+}
+
+.five {
+    /* background-color: hotpink;      */
+    position: relative;
+    top: -100px; 
+    left: 300px; 
+
+}
+
+.six {
+    /* background-color:gray;  */
+    align-content: center;  
+    position: relative;
+    top: -100px; 
+}
+
+.name {
+    color: #f16821; 
+    font-size: 125px; 
+    font-family: 'Ruthie', cursive;
+}
+
+.title {
+    color: #f16821; 
+    font-size: 22px; 
+    /* position: relative;
+    left: 600px; 
+    top: -200px;  */
+    font-family: 'Ruthie', cursive;
+    font-family: 'Cousine', monospace;
+}
+
+.cloud {
+    height: 150px; 
+    width: 150 px; 
+    /* position: relative; 
+    left: 250px; 
+    top: 145px; */
+}
+
+.cloud-two {
+    height: 150px; 
+    width: 150 px; 
+    /* position: relative; 
+    left: 1000px; 
+    top:10px; */
+}
+
+.me {
+    justify-content: center; 
+    /* position: relative; 
+    top: 20px; 
+    left: 100px;  */
+}
+
+.Hi {
+    color: black ; 
+    /* color: green;  */
+    /* position: relative;
+    left: 200px;   */
+    font-size: 20px; 
+    font-family: 'Ruthie', cursive;
+    font-family: 'Cousine', monospace;
+}
+
+.beach {
+    height: 50px; 
+    width: 100 px; 
+    /* position: relative; 
+    left: 500px; 
+    top: -75px;  */
+}
+
+
+.circular {
+    border-radius: 100%; 
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+/******** ANIMATION ****************/
+
+.ml9 {
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+  }
+  
+  .ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml9 .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+
+/************* SKILLS ***************************************/
+
+#skills {
+    background-color: white; 
+    background-color: pink; 
+    background-color: #32dbc6; 
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    color: #f16821; 
+    color: white; 
+}
+
+ul {
+    list-style: none; 
+    justify-content: left; 
+}
+
+.row-one {
+text-align: center; 
+column-count: 4; 
+list-style: none; 
+padding: 11px; 
+}
+
+.row-two {
+    text-align: center; 
+    column-count: 4; 
+    list-style: none; 
+    padding: 10px; 
+    }
+
+.row-three {
+    text-align: center; 
+    column-count: 4; 
+    list-style: none; 
+    padding: 10px; 
+    }
+    
+.skill-type:hover {
+     color: darkslategrey; 
+     color: black; 
+     color: #f16821; 
+    }
