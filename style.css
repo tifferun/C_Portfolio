@@ -11,6 +11,19 @@ img {
     width: 400px; 
 }
 
+hr {
+    border-style: none; 
+    border-top-style: dotted; 
+    border-color: lightgray;
+    border-width: 8px; 
+    width:5%; 
+    position: relative;
+    top: -40px; 
+    align-content: center; 
+}
+
+/*********** TOP DESIGN IMAGES Before SKILLS **************/
+
 .one {
     /* background-color: pink;  */
     /* text-align: center;  */
@@ -23,7 +36,7 @@ img {
     /* background-color: yellow;   */
     position: relative;
     top: -25px; 
-    left: 900px; 
+    left: 1100px; 
 }
 
 
@@ -55,15 +68,18 @@ img {
     top: -100px; 
 }
 
+/******** Sections ****************/
 .name {
     color: #f16821; 
     font-size: 125px; 
     font-family: 'Ruthie', cursive;
+    opacity: 0.85;
 }
 
 .title {
     color: #f16821; 
     font-size: 22px; 
+    /* opacity: 0.85; */
     /* position: relative;
     left: 600px; 
     top: -200px;  */
@@ -74,6 +90,7 @@ img {
 .cloud {
     height: 150px; 
     width: 150 px; 
+    /* opacity: 0.5; */
     /* position: relative; 
     left: 250px; 
     top: 145px; */
@@ -82,6 +99,7 @@ img {
 .cloud-two {
     height: 150px; 
     width: 150 px; 
+    /* opacity:0.5; */
     /* position: relative; 
     left: 1000px; 
     top:10px; */
@@ -89,6 +107,7 @@ img {
 
 .me {
     justify-content: center; 
+    opacity: 0.8; 
     /* position: relative; 
     top: 20px; 
     left: 100px;  */
@@ -97,8 +116,8 @@ img {
 .Hi {
     color: black ; 
     /* color: green;  */
-    /* position: relative;
-    left: 200px;   */
+    position: relative;
+    left: 40px;  
     font-size: 20px; 
     font-family: 'Ruthie', cursive;
     font-family: 'Cousine', monospace;
@@ -107,11 +126,117 @@ img {
 .beach {
     height: 50px; 
     width: 100 px; 
-    /* position: relative; 
-    left: 500px; 
-    top: -75px;  */
+    opacity: 0.2; 
 }
 
+.about {
+    /* background-color: red;  */
+    color:  #f16821; 
+    position: relative;
+    text-align: center; 
+    font-size: 20px; 
+    font-family: 'Ruthie', cursive;
+    font-family: 'Cousine', monospace;
+    padding: 10px; 
+    padding-top: 50px; 
+    padding-bottom: 70px; 
+    opacity: .5;
+ 
+}
+
+.sun {
+    padding: 20px; 
+}
+
+.what {
+    /* background-color: hotpink;  */
+    color:  #f16821; 
+    position: relative;
+    padding: 50px; 
+    text-align: center; 
+    font-size: 50px; 
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poiret One', cursive;
+    padding: 20px; 
+    padding-top: 40px; 
+    padding-bottom: 40px; 
+}
+
+.want {
+    /* background-color: #f16821;  */
+    color: white; 
+    color: #f16821; 
+    text-align: justify; 
+    position: relative;
+    opacity: .8;
+}
+
+.header {
+    font-size: 30px; 
+}
+
+.light {
+    /* background-color:purple;  */
+}
+
+.lightbulb {
+    position: relative;
+    left: 450px; 
+    opacity: 0.5;
+}
+
+.box-need {
+    /* background-color: blue;  */
+    padding: 50px; 
+}
+
+.need {
+    position: relative;
+    left: 200px; 
+}
+.water {
+    position: relative;
+    left: -10px; 
+    opacity: .8;
+}
+.currently {
+    /* background-color: green;  */
+    color: #f16821; 
+    text-align: center; 
+    opacity: .8;
+    position: relative;
+    top: -20px; 
+}
+
+.started {
+    color: #f16821; 
+    text-align: center; 
+    opacity: .8;
+    padding-bottom: 10px; 
+}
+
+.puppy {
+    position: relative;
+    align-content: center; 
+    text-align: center; 
+    padding: 10px; 
+    padding-bottom: 20px; 
+    
+}
+
+.foot{
+    background-color: #0EA5C6; 
+    color: white; 
+    font-size: 15px; 
+    opacity: .5; 
+    padding: 10px; 
+}
+
+.copyright {
+    font-size: 15px; 
+    text-align: center; 
+}
+/******** Special designs ****************/
 
 .circular {
     border-radius: 100%; 
@@ -126,28 +251,36 @@ img {
 
 /******** ANIMATION ****************/
 
-.ml9 {
-    position: relative;
-    font-weight: 200;
-    font-size: 4em;
+/* .ml1 {
+    font-weight: 900;
+    font-size: 3.5em;
   }
   
-  .ml9 .text-wrapper {
-    position: relative;
-    display: inline-block;
-    padding-top: 0.2em;
-    padding-right: 0.05em;
-    padding-bottom: 0.1em;
-    overflow: hidden;
-  }
-  
-  .ml9 .letter {
-    transform-origin: 50% 100%;
+  .ml1 .letter {
     display: inline-block;
     line-height: 1em;
   }
-
-
+  
+  .ml1 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+  
+  .ml1 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    transform-origin: 0 0;
+  }
+  
+  .ml1 .line1 { top: 0; }
+  .ml1 .line2 { bottom: 0; } */
 
 /************* SKILLS ***************************************/
 
@@ -155,10 +288,12 @@ img {
     background-color: white; 
     background-color: pink; 
     background-color: #32dbc6; 
+    background-color: #0EA5C6; 
     font-size: 2rem;
     font-family: 'Quicksand', sans-serif;
     color: #f16821; 
     color: white; 
+    opacity: 0.5; 
 }
 
 ul {
@@ -171,6 +306,7 @@ text-align: center;
 column-count: 4; 
 list-style: none; 
 padding: 11px; 
+padding-top: 40px; 
 }
 
 .row-two {
@@ -185,10 +321,9 @@ padding: 11px;
     column-count: 4; 
     list-style: none; 
     padding: 10px; 
+    padding-bottom: 40px; 
     }
     
 .skill-type:hover {
-     color: darkslategrey; 
      color: black; 
-     color: #f16821; 
     }
