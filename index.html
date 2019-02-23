@@ -22,38 +22,14 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ruthie" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cousine|Ruthie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Poiret+One" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script>
-        // Wrap every letter in a span
-        $('.ml9 .letters').each(function () {
-            $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-        });
-
-        anime.timeline({ loop: true })
-            .add({
-                targets: '.ml9 .letter',
-                scale: [0, 1],
-                duration: 1500,
-                elasticity: 600,
-                delay: function (el, i) {
-                    return 45 * (i + 1)
-                }
-            }).add({
-                targets: '.ml9',
-                opacity: 0,
-                duration: 1000,
-                easing: "easeOutExpo",
-                delay: 1000
-            });
-
-    </script>
-
 </head>
 
-<body>
+<body onload="typeWriter()">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -67,23 +43,16 @@
             </li>
         </ul>
     </nav>
-    <!-- 
-    <h1 class="ml9">
-        <span class="text-wrapper">
-            <span class="letters">Coffee mornings</span>
-        </span>
-    </h1> -->
-
     <div class="row one">
         <div class="col">
-            <img class="me circular" src="images/Tiffany Cartoon.png" style="width:100px; height:100px;">
+            <img class="me circular" src="images/myAvatar (2).png" style="width:100px; height:100px;">
             <span class="Hi">Hi There!</span>
         </div>
     </div>
 
     <div class="row two">
         <div class="col">
-            <img src="images/clouds.png" class="cloud" style="width:100px; height:90px;">
+            <img src="images/bluegrayclouds.png" class="cloud" style="width:100px; height:90px;">
         </div>
     </div>
 
@@ -93,25 +62,17 @@
         </div>
     </div>
 
-    <!-- <div class="row four m19 col">
-        <div class="col">
-            <span class="text-wrapper">
-                <span class="letters letter title">a software engineer</span>
-            </span>
-        </div>
-    </div> -->
+    <!-- <p id="demo"></p> -->
 
-    <div class="row four m19 col">
+    <div class="row four col">
         <div class="col">
-            <span class="text-wrapper">
-                <span class="letters letter title">a software engineer</span>
-            </span>
+            <div class="title" id="demo"></div>
         </div>
     </div>
 
     <div class="row five">
         <div class="col">
-            <img src="images/clouds.png" class="cloud-two" style="width:100px; height:90px;">
+            <img src="images/bluegrayclouds.png" class="cloud-two" style="width:100px; height:90px;">
         </div>
     </div>
 
@@ -120,30 +81,29 @@
             <img src="images/beach.png" class="beach center" style="width:550px; height:350px;">
         </div>
     </div>
-
+    <hr>
+    <!-- <p class="myskills">Skills</p> -->
     <div id="skills" style>
-        <!-- <p class="myskills">Skills</p> -->
-
         <div class="row-one">
-            <div class="column">
+            <div class="col">
                 <li class="skill-type">
                     <i class="devicon-javascript-plain"></i>
                     JavaScript
                 </li>
             </div>
-            <div class="column">
+            <div class="col">
                 <li class="skill-type">
                     <i class="devicon-react-original"></i>
                     React
                 </li>
             </div>
-            <div class="column">
+            <div class="col">
                 <li class="skill-type">
                     <i class="devicon-nodejs-plain"></i>
                     Nodejs
                 </li>
             </div>
-            <div class="column">
+            <div class="col">
                 <li class="skill-type">
                     <i class="devicon-express-original"></i>
                     Express
@@ -152,28 +112,28 @@
         </div>
         <div class="row-two">
 
-            <div class="column">
+            <div class="col">
                 <li class="skill-type">
                     <i class="devicon-mysql-plain"></i>
                     MySQL
                 </li>
             </div>
 
-            <div class="column">
+            <div class="col">
                 <li class="skill-type">
                     <i class="devicon-mongodb-plain"></i>
                     MongoDB
                 </li>
             </div>
 
-            <div class="column">
+            <div class="col">
                 <li class="skill-type">
                     <i class="devicon-html5-plain"></i>
                     HTML
                 </li>
             </div>
 
-            <div class="column">
+            <div class="col">
                 <li class="skill-type">
                     <i class="devicon-css3-plain"></i>
                     CSS
@@ -182,35 +142,137 @@
         </div>
         <div class="row-three">
 
-            <div class="column">
+            <div class="col">
                 <li class="skill-type">
                     <i class="devicon-wordpress-plain"></i>
                     WordPress
                 </li>
             </div>
 
-            <div class="column">
+            <div class="col">
                 <li class="skill-type">
                     <i class="devicon-bootstrap-plain"></i>
                     Bootstrap
                 </li>
             </div>
 
-            <div class="column">
+            <div class="col">
                 <li class="skill-type">
                     <i class="devicon-jquery-plain"></i>
                     jQuery
                 </li>
             </div>
 
-            <div class="column">
+            <div class="col">
                 <li class="skill-type">
                     <i class="devicon-photoshop-plain"></i>
                     Photoshop
                 </li>
             </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    </div>
+
+    <!-- END OF SKILLS SECTION  -->
+    <div class="row about">
+        <div class="col sunshine">
+            <img src="images/sunshine.jpg" class="sun center" style="width:150px; height:150px;">
+            <p>I'm an engineer enjoying the sunshine of Phoenix, Arizona.</p>
+            <p>I have a passion for web design and love to</p>
+            <p>create for web and mobile devices.</p>
+        </div>
+    </div>
+
+    <div class="row about what">
+        <div class="col">
+            <p>What I can do.</p>
+        </div>
+    </div>
+
+    <div class="row want">
+        <div class="col light">
+            <img src="images/lightbulb.jpg" class="lightbulb" style="width:125px; height:125px;">
+        </div>
+        <div class="col want">
+            <p class="header">Design what you want.</p>
+            <br>
+            <p>I like to keep it simple. My goals are to focus on</p>
+            <p>typography, content and conveying the message </p>
+            <p>that you want to send.</p>
+        </div>
+    </div>
+
+    <div class="row box-need">
+        <div class="col want need">
+            <p class="header">Develop what you need.</p>
+            <br>
+            <p>I'm a developer, so I know how to create your </p>
+            <p>website to run across devices using the latest </p>
+            <p>technologies available.</p>
+        </div>
+        <div class="col light">
+            <img src="images/water.png" class="water" style="width:180px; height:200px;">
+        </div>
+    </div>
+    <div class="row about what">
+        <div class="col">
+            <p>I can help.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col currently">
+            <p class="header">I’m currently available for freelance work.</p>
+        </div>
+    </div>
+
+    <div class="started">
+        <div class="col">
+            <p>If you have a project that you want to get started, think you need my help </p>
+            <p>with something or just fancy saying hey, then get in touch.</p>
+        </div>
+    </div>
+
+    <div class="row puppy">
+        <div class="col puppy">
+            <button type="button" class="btn btn-secondary">Message Me</button>
+        </div>
+    </div>
+
+
+    <footer class="foot">
+        <div class="footer-container col-12">
+
+
+            <div class="row">
+                <div class="col">
+                    <div class="icons">
+                        <div class="col foot"> <a class="" href="#">About</a> </div>
+                        <div class="col foot"> <a class="" href="#">About</a> </div>
+                        <div class="col foot"> <a class="" href="#">About</a> </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row copyright">
+                <div class="col">
+                    <p class="copyright">Copyright, Tiffany Rudd, 2019 ©</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var i = 0;
+        var txt = 'a software engineer.';
+        var speed = 50;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
 </body>
+
 </html>
