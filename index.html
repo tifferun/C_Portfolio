@@ -29,7 +29,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body onload="typeWriter()">
+<body onload="typeWriter();myMove();">
+
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -45,14 +46,14 @@
     </nav>
     <div class="row one">
         <div class="col">
-            <img class="me circular" src="images/myAvatar (2).png" style="width:100px; height:100px;">
+            <img class="me circular" src="images/myAvatar (5).png" style="width:100px; height:100px;">
             <span class="Hi">Hi There!</span>
         </div>
     </div>
 
     <div class="row two">
         <div class="col">
-            <img src="images/bluegrayclouds.png" class="cloud" style="width:100px; height:90px;">
+            <img src="images/bluegrayclouds.png" id="myAnimation" class="cloud" style="width:100px; height:90px;">
         </div>
     </div>
 
@@ -62,7 +63,6 @@
         </div>
     </div>
 
-    <!-- <p id="demo"></p> -->
 
     <div class="row four col">
         <div class="col">
@@ -82,7 +82,7 @@
         </div>
     </div>
     <hr>
-    <!-- <p class="myskills">Skills</p> -->
+    <!---**********************Skills*****************************> -->
     <div id="skills" style>
         <div class="row-one">
             <div class="col">
@@ -270,6 +270,20 @@
                 document.getElementById("demo").innerHTML += txt.charAt(i);
                 i++;
                 setTimeout(typeWriter, speed);
+            }
+        }
+        function myMove() {
+            var elem = document.getElementById("myAnimation");
+            var pos = 0;
+            var id = setInterval(frame, 10);
+            function frame() {
+                if (pos == 350) {
+                    clearInterval(id);
+                } else {
+                    pos++;
+                    elem.style.top = pos + 'px';
+                    elem.style.left = pos + 'px';
+                }
             }
         }
     </script>
