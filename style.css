@@ -2,6 +2,7 @@ body {
     background-color: #defcfc; 
     background-color: purple; 
     background-color: white;
+    /* position: absolute; */
     /* background-color:limegreen;  */
     /* max-width: 800px;  */
 }
@@ -19,14 +20,19 @@ hr {
     width:5%; 
     position: relative;
     top: -40px; 
-    align-content: center; 
+    left: -30px; 
 }
+
+#myAnimation {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
 
 /*********** TOP DESIGN IMAGES Before SKILLS **************/
 
 .one {
-    /* background-color: pink;  */
-    /* text-align: center;  */
     position: relative;
     top: 70px; 
     left: 100px; 
@@ -117,6 +123,7 @@ hr {
     color: black ; 
     /* color: green;  */
     position: relative;
+    opacity: .5; 
     left: 40px;  
     font-size: 20px; 
     font-family: 'Ruthie', cursive;
